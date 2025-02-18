@@ -1,0 +1,65 @@
+2025-02-18 17:58:39,328 - KPLPredictor - INFO - Starting automated data collection job
+2025-02-18 17:58:40,082 - KPLPredictor - INFO - Successfully collected data. Saved to kpl_match_data/raw_data_20250218_175840.json
+2025-02-18 17:58:40,083 - KPLPredictor - INFO - Processed 0 matches in automated collection
+2025-02-18 17:58:40,083 - KPLPredictor - INFO - Updated team averages for 0 teams
+2025-02-18 17:58:40,083 - KPLPredictor - INFO - Automated collection started with 12h frequency
+2025-02-18 17:58:40,660 - KPLPredictor - INFO - Successfully collected data. Saved to kpl_match_data/raw_data_20250218_175840.json
+2025-02-18 17:58:40,661 - KPLPredictor - INFO - Generating prediction for Gor Mahia vs AFC Leopards
+2025-02-18 17:58:40,662 - KPLPredictor - WARNING - No match data found for team Gor Mahia
+2025-02-18 17:58:40,662 - KPLPredictor - WARNING - No match data found for team AFC Leopards
+2025-02-18 17:58:40,662 - KPLPredictor - ERROR - Cannot generate prediction: missing team average data
+2025-02-18 17:58:40,757 - KPLPredictor - ERROR - Error getting fixtures: HTTPSConnectionPool(host='example-kpl-data-source.com', port=443): Max retries exceeded with url: /api/fixtures?days=7 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Error')))
+Traceback (most recent call last):
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 721, in connect
+    self._tunnel()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 981, in _tunnel
+    raise OSError(f"Tunnel connection failed: {code} {message.strip()}")
+OSError: Tunnel connection failed: 503 Error
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Error'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='example-kpl-data-source.com', port=443): Max retries exceeded with url: /api/fixtures?days=7 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Error')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\SCHOOL DROP OUT\last sem dip\PROJECT\DOCUMENTATION\TESTS\analyzer5.py", line 557, in get_upcoming_fixtures
+    response = requests.get(url)
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leon\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 694, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='example-kpl-data-source.com', port=443): Max retries exceeded with url: /api/fixtures?days=7 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Error')))
+2025-02-18 17:58:40,918 - KPLPredictor - WARNING - No upcoming fixtures found to predict

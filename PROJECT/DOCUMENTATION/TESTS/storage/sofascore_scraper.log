@@ -1,0 +1,56 @@
+2025-02-18 16:18:50,865 - INFO - SofaScore scraper initialized successfully
+2025-02-18 16:18:50,865 - INFO - Starting full scrape process
+2025-02-18 16:19:22,956 - ERROR - Error extracting team IDs: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B8656F15+28773]
+	(No symbol) [0x00007FF7B85C2600]
+	(No symbol) [0x00007FF7B8458FAA]
+	(No symbol) [0x00007FF7B84AF286]
+	(No symbol) [0x00007FF7B84AF4BC]
+	(No symbol) [0x00007FF7B8502A27]
+	(No symbol) [0x00007FF7B84D728F]
+	(No symbol) [0x00007FF7B84FF6F3]
+	(No symbol) [0x00007FF7B84D7023]
+	(No symbol) [0x00007FF7B849FF5E]
+	(No symbol) [0x00007FF7B84A11E3]
+	GetHandleVerifier [0x00007FF7B89A425D+3490733]
+	GetHandleVerifier [0x00007FF7B89BBA43+3586963]
+	GetHandleVerifier [0x00007FF7B89B147D+3544525]
+	GetHandleVerifier [0x00007FF7B871C9DA+838442]
+	(No symbol) [0x00007FF7B85CD04F]
+	(No symbol) [0x00007FF7B85C9614]
+	(No symbol) [0x00007FF7B85C97B6]
+	(No symbol) [0x00007FF7B85B8CE9]
+	BaseThreadInitThunk [0x00007FFD688A7344+20]
+	RtlUserThreadStart [0x00007FFD68F626B1+33]
+
+2025-02-18 16:19:32,277 - INFO - Data saved successfully to sofascore_data\match_results.json
+2025-02-18 16:19:32,277 - INFO - Successfully scraped 0 matches
+2025-02-18 16:19:59,321 - ERROR - Error extracting team IDs: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B8656F15+28773]
+	(No symbol) [0x00007FF7B85C2600]
+	(No symbol) [0x00007FF7B8458FAA]
+	(No symbol) [0x00007FF7B84AF286]
+	(No symbol) [0x00007FF7B84AF4BC]
+	(No symbol) [0x00007FF7B8502A27]
+	(No symbol) [0x00007FF7B84D728F]
+	(No symbol) [0x00007FF7B84FF6F3]
+	(No symbol) [0x00007FF7B84D7023]
+	(No symbol) [0x00007FF7B849FF5E]
+	(No symbol) [0x00007FF7B84A11E3]
+	GetHandleVerifier [0x00007FF7B89A425D+3490733]
+	GetHandleVerifier [0x00007FF7B89BBA43+3586963]
+	GetHandleVerifier [0x00007FF7B89B147D+3544525]
+	GetHandleVerifier [0x00007FF7B871C9DA+838442]
+	(No symbol) [0x00007FF7B85CD04F]
+	(No symbol) [0x00007FF7B85C9614]
+	(No symbol) [0x00007FF7B85C97B6]
+	(No symbol) [0x00007FF7B85B8CE9]
+	BaseThreadInitThunk [0x00007FFD688A7344+20]
+	RtlUserThreadStart [0x00007FFD68F626B1+33]
+
+2025-02-18 16:19:59,323 - INFO - Data saved successfully to sofascore_data\all_teams_performance.json
+2025-02-18 16:19:59,324 - INFO - Completed scraping performance data for 0 teams
+2025-02-18 16:19:59,324 - INFO - Full scrape completed successfully
+2025-02-18 16:20:01,573 - INFO - WebDriver closed successfully
